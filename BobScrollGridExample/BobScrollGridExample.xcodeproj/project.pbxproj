@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12A99951491749700B412A7 /* BSGViewTempController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A99941491749700B412A7 /* BSGViewTempController.m */; };
+		A12C317F148EB4B000427A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C317E148EB4B000427A8C /* UIKit.framework */; };
+		A12C3181148EB4B000427A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C3180148EB4B000427A8C /* Foundation.framework */; };
+		A12C3183148EB4B000427A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C3182148EB4B000427A8C /* CoreGraphics.framework */; };
+		A12C3189148EB4B000427A8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12C3187148EB4B000427A8C /* InfoPlist.strings */; };
+		A12C318B148EB4B000427A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C318A148EB4B000427A8C /* main.m */; };
+		A12C318F148EB4B000427A8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C318E148EB4B000427A8C /* AppDelegate.m */; };
+		A12C319E148EB5D900427A8C /* libBobScrollGrid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C319D148EB5D900427A8C /* libBobScrollGrid.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A12A99931491749700B412A7 /* BSGViewTempController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGViewTempController.h; sourceTree = "<group>"; };
+		A12A99941491749700B412A7 /* BSGViewTempController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGViewTempController.m; sourceTree = "<group>"; };
+		A12C317A148EB4B000427A8C /* BobScrollGridExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BobScrollGridExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C317E148EB4B000427A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A12C3180148EB4B000427A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A12C3182148EB4B000427A8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A12C3186148EB4B000427A8C /* BobScrollGridExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BobScrollGridExample-Info.plist"; sourceTree = "<group>"; };
+		A12C3188148EB4B000427A8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A12C318A148EB4B000427A8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A12C318C148EB4B000427A8C /* BobScrollGridExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BobScrollGridExample-Prefix.pch"; sourceTree = "<group>"; };
+		A12C318D148EB4B000427A8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A12C318E148EB4B000427A8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A12C319D148EB5D900427A8C /* libBobScrollGrid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBobScrollGrid.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12C3177148EB4B000427A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C319E148EB5D900427A8C /* libBobScrollGrid.a in Frameworks */,
+				A12C317F148EB4B000427A8C /* UIKit.framework in Frameworks */,
+				A12C3181148EB4B000427A8C /* Foundation.framework in Frameworks */,
+				A12C3183148EB4B000427A8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12C316F148EB4B000427A8C = {
+			isa = PBXGroup;
+			children = (
+				A12C3184148EB4B000427A8C /* BobScrollGridExample */,
+				A12C317D148EB4B000427A8C /* Frameworks */,
+				A12C317B148EB4B000427A8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12C317B148EB4B000427A8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12C317A148EB4B000427A8C /* BobScrollGridExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12C317D148EB4B000427A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12C319D148EB5D900427A8C /* libBobScrollGrid.a */,
+				A12C317E148EB4B000427A8C /* UIKit.framework */,
+				A12C3180148EB4B000427A8C /* Foundation.framework */,
+				A12C3182148EB4B000427A8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12C3184148EB4B000427A8C /* BobScrollGridExample */ = {
+			isa = PBXGroup;
+			children = (
+				A12C318D148EB4B000427A8C /* AppDelegate.h */,
+				A12C318E148EB4B000427A8C /* AppDelegate.m */,
+				A12C3185148EB4B000427A8C /* Supporting Files */,
+				A12A99931491749700B412A7 /* BSGViewTempController.h */,
+				A12A99941491749700B412A7 /* BSGViewTempController.m */,
+			);
+			path = BobScrollGridExample;
+			sourceTree = "<group>";
+		};
+		A12C3185148EB4B000427A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12C3186148EB4B000427A8C /* BobScrollGridExample-Info.plist */,
+				A12C3187148EB4B000427A8C /* InfoPlist.strings */,
+				A12C318A148EB4B000427A8C /* main.m */,
+				A12C318C148EB4B000427A8C /* BobScrollGridExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A12C3179148EB4B000427A8C /* BobScrollGridExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C3192148EB4B000427A8C /* Build configuration list for PBXNativeTarget "BobScrollGridExample" */;
+			buildPhases = (
+				A12C3176148EB4B000427A8C /* Sources */,
+				A12C3177148EB4B000427A8C /* Frameworks */,
+				A12C3178148EB4B000427A8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BobScrollGridExample;
+			productName = BobScrollGridExample;
+			productReference = A12C317A148EB4B000427A8C /* BobScrollGridExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12C3171148EB4B000427A8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Richard Martin";
+			};
+			buildConfigurationList = A12C3174148EB4B000427A8C /* Build configuration list for PBXProject "BobScrollGridExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A12C316F148EB4B000427A8C;
+			productRefGroup = A12C317B148EB4B000427A8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12C3179148EB4B000427A8C /* BobScrollGridExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A12C3178148EB4B000427A8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C3189148EB4B000427A8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12C3176148EB4B000427A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C318B148EB4B000427A8C /* main.m in Sources */,
+				A12C318F148EB4B000427A8C /* AppDelegate.m in Sources */,
+				A12A99951491749700B412A7 /* BSGViewTempController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A12C3187148EB4B000427A8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12C3188148EB4B000427A8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12C3190148EB4B000427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12C3191148EB4B000427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12C3193148EB4B000427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BobScrollGridExample/BobScrollGridExample-Prefix.pch";
+				INFOPLIST_FILE = "BobScrollGridExample/BobScrollGridExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/BobScrollGrid $(SRCROOT)/../BobScrollGrid";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A12C3194148EB4B000427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BobScrollGridExample/BobScrollGridExample-Prefix.pch";
+				INFOPLIST_FILE = "BobScrollGridExample/BobScrollGridExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/BobScrollGrid $(SRCROOT)/../BobScrollGrid";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12C3174148EB4B000427A8C /* Build configuration list for PBXProject "BobScrollGridExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C3190148EB4B000427A8C /* Debug */,
+				A12C3191148EB4B000427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C3192148EB4B000427A8C /* Build configuration list for PBXNativeTarget "BobScrollGridExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C3193148EB4B000427A8C /* Debug */,
+				A12C3194148EB4B000427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A12C3171148EB4B000427A8C /* Project object */;
+}

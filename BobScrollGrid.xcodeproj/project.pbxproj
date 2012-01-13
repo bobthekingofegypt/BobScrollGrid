@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A12C316A148EB3C400427A8C /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A12C316B148EB3C400427A8C /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				A12C316E148EB3CC00427A8C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A12A99771490046F00B412A7 /* BSGEntryView.h in Headers */ = {isa = PBXBuildFile; fileRef = A12A99751490046F00B412A7 /* BSGEntryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12A99781490046F00B412A7 /* BSGEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A99761490046F00B412A7 /* BSGEntryView.m */; };
+		A12A997E1490136300B412A7 /* BSGEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A99761490046F00B412A7 /* BSGEntryView.m */; };
+		A12A997F1490137500B412A7 /* BSGEntryViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A997B14900F7700B412A7 /* BSGEntryViewTest.m */; };
+		A12A998914914BC400B412A7 /* BSGView.h in Headers */ = {isa = PBXBuildFile; fileRef = A12A998714914BC400B412A7 /* BSGView.h */; };
+		A12A998A14914BC400B412A7 /* BSGView.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A998814914BC400B412A7 /* BSGView.m */; };
+		A12C3128148D794200427A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C3127148D794200427A8C /* Foundation.framework */; };
+		A12C313B148D7A8200427A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C313A148D7A8200427A8C /* UIKit.framework */; };
+		A12C313C148D7A8200427A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C3127148D794200427A8C /* Foundation.framework */; };
+		A12C313E148D7A8200427A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C313D148D7A8200427A8C /* CoreGraphics.framework */; };
+		A12C3144148D7A8200427A8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12C3142148D7A8200427A8C /* InfoPlist.strings */; };
+		A12C3146148D7A8200427A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C3145148D7A8200427A8C /* main.m */; };
+		A12C3150148D7B3E00427A8C /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C314E148D7B3300427A8C /* GHUnitIOS.framework */; };
+		A12C3155148D7D1E00427A8C /* BSGViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C3152148D7CE900427A8C /* BSGViewTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A12A99751490046F00B412A7 /* BSGEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGEntryView.h; sourceTree = "<group>"; };
+		A12A99761490046F00B412A7 /* BSGEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGEntryView.m; sourceTree = "<group>"; };
+		A12A997B14900F7700B412A7 /* BSGEntryViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGEntryViewTest.m; sourceTree = "<group>"; };
+		A12A998714914BC400B412A7 /* BSGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGView.h; sourceTree = "<group>"; };
+		A12A998814914BC400B412A7 /* BSGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGView.m; sourceTree = "<group>"; };
+		A12C3124148D794200427A8C /* libBobScrollGrid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBobScrollGrid.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C3127148D794200427A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A12C312B148D794200427A8C /* BobScrollGrid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BobScrollGrid-Prefix.pch"; sourceTree = "<group>"; };
+		A12C3138148D7A8200427A8C /* unittests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unittests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C313A148D7A8200427A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A12C313D148D7A8200427A8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A12C3141148D7A8200427A8C /* unittests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unittests-Info.plist"; sourceTree = "<group>"; };
+		A12C3143148D7A8200427A8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A12C3145148D7A8200427A8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A12C3147148D7A8200427A8C /* unittests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unittests-Prefix.pch"; sourceTree = "<group>"; };
+		A12C314E148D7B3300427A8C /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ExternalFrameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
+		A12C3152148D7CE900427A8C /* BSGViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGViewTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12C3121148D794200427A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C3128148D794200427A8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C3135148D7A8200427A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C313B148D7A8200427A8C /* UIKit.framework in Frameworks */,
+				A12C313C148D7A8200427A8C /* Foundation.framework in Frameworks */,
+				A12C313E148D7A8200427A8C /* CoreGraphics.framework in Frameworks */,
+				A12C3150148D7B3E00427A8C /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12C3119148D794200427A8C = {
+			isa = PBXGroup;
+			children = (
+				A12C3129148D794200427A8C /* BobScrollGrid */,
+				A12C313F148D7A8200427A8C /* unittests */,
+				A12C3126148D794200427A8C /* Frameworks */,
+				A12C3125148D794200427A8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12C3125148D794200427A8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12C3124148D794200427A8C /* libBobScrollGrid.a */,
+				A12C3138148D7A8200427A8C /* unittests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12C3126148D794200427A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12C314E148D7B3300427A8C /* GHUnitIOS.framework */,
+				A12C3127148D794200427A8C /* Foundation.framework */,
+				A12C313A148D7A8200427A8C /* UIKit.framework */,
+				A12C313D148D7A8200427A8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12C3129148D794200427A8C /* BobScrollGrid */ = {
+			isa = PBXGroup;
+			children = (
+				A12C312A148D794200427A8C /* Supporting Files */,
+				A12A99751490046F00B412A7 /* BSGEntryView.h */,
+				A12A99761490046F00B412A7 /* BSGEntryView.m */,
+				A12A998714914BC400B412A7 /* BSGView.h */,
+				A12A998814914BC400B412A7 /* BSGView.m */,
+			);
+			path = BobScrollGrid;
+			sourceTree = "<group>";
+		};
+		A12C312A148D794200427A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12C312B148D794200427A8C /* BobScrollGrid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A12C313F148D7A8200427A8C /* unittests */ = {
+			isa = PBXGroup;
+			children = (
+				A12C3140148D7A8200427A8C /* Supporting Files */,
+				A12C3152148D7CE900427A8C /* BSGViewTest.m */,
+				A12A997B14900F7700B412A7 /* BSGEntryViewTest.m */,
+			);
+			path = unittests;
+			sourceTree = "<group>";
+		};
+		A12C3140148D7A8200427A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12C3141148D7A8200427A8C /* unittests-Info.plist */,
+				A12C3142148D7A8200427A8C /* InfoPlist.strings */,
+				A12C3145148D7A8200427A8C /* main.m */,
+				A12C3147148D7A8200427A8C /* unittests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A12C3122148D794200427A8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A99771490046F00B412A7 /* BSGEntryView.h in Headers */,
+				A12A998914914BC400B412A7 /* BSGView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A12C3123148D794200427A8C /* BobScrollGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C3131148D794200427A8C /* Build configuration list for PBXNativeTarget "BobScrollGrid" */;
+			buildPhases = (
+				A12C3120148D794200427A8C /* Sources */,
+				A12C3121148D794200427A8C /* Frameworks */,
+				A12C3122148D794200427A8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BobScrollGrid;
+			productName = BobScrollGrid;
+			productReference = A12C3124148D794200427A8C /* libBobScrollGrid.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A12C3137148D7A8200427A8C /* unittests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C314B148D7A8200427A8C /* Build configuration list for PBXNativeTarget "unittests" */;
+			buildPhases = (
+				A12C3134148D7A8200427A8C /* Sources */,
+				A12C3135148D7A8200427A8C /* Frameworks */,
+				A12C3136148D7A8200427A8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unittests;
+			productName = unittests;
+			productReference = A12C3138148D7A8200427A8C /* unittests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12C311B148D794200427A8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Richard Martin";
+			};
+			buildConfigurationList = A12C311E148D794200427A8C /* Build configuration list for PBXProject "BobScrollGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A12C3119148D794200427A8C;
+			productRefGroup = A12C3125148D794200427A8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12C3123148D794200427A8C /* BobScrollGrid */,
+				A12C3137148D7A8200427A8C /* unittests */,
+				A12C316A148EB3C400427A8C /* Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A12C3136148D7A8200427A8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C3144148D7A8200427A8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A12C316E148EB3CC00427A8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n --project-name \"BobScrollGrid\" \\\n --project-company \"bobstuff\" \\\n --company-id \"org.bobstuff\" \\\n --docset-atom-filename \"BobScrollGrid.atom\" \\\n --docset-feed-url \"http://bobthekingofegypt.github.com/test/%DOCSETATOMFILENAME\" \\\n --docset-package-url \"http://bobthekingofegypt.github.com/test/%DOCSETPACKAGEFILENAME\" \\\n --docset-fallback-url \"http://bobthekingofegypt.github.com/test/\" \\\n --output \"~/help\" \\\n --publish-docset \\\n --logformat xcode \\\n --keep-undocumented-objects \\\n --keep-undocumented-members \\\n --keep-intermediate-files \\\n --no-repeat-first-par \\\n --no-warn-invalid-crossref \\\n --ignore \"*.m\" \\\n --ignore \"GH*.h\" \\\n --ignore \"Frameworks\" \\\n --ignore \"BobScrollGridExample\" \\\n --ignore \"LoadableCategory.h\" \\\n --exit-threshold 2 \\\n \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12C3120148D794200427A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A99781490046F00B412A7 /* BSGEntryView.m in Sources */,
+				A12A998A14914BC400B412A7 /* BSGView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C3134148D7A8200427A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C3146148D7A8200427A8C /* main.m in Sources */,
+				A12C3155148D7D1E00427A8C /* BSGViewTest.m in Sources */,
+				A12A997E1490136300B412A7 /* BSGEntryView.m in Sources */,
+				A12A997F1490137500B412A7 /* BSGEntryViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A12C3142148D7A8200427A8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12C3143148D7A8200427A8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12C312F148D794200427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A12C3130148D794200427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12C3132148D794200427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BobScrollGrid.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BobScrollGrid/BobScrollGrid-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A12C3133148D794200427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BobScrollGrid.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BobScrollGrid/BobScrollGrid-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A12C314C148D7A8200427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ExternalFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "unittests/unittests-Prefix.pch";
+				INFOPLIST_FILE = "unittests/unittests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A12C314D148D7A8200427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ExternalFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "unittests/unittests-Prefix.pch";
+				INFOPLIST_FILE = "unittests/unittests-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A12C316C148EB3C400427A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A12C316D148EB3C400427A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12C311E148D794200427A8C /* Build configuration list for PBXProject "BobScrollGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C312F148D794200427A8C /* Debug */,
+				A12C3130148D794200427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C3131148D794200427A8C /* Build configuration list for PBXNativeTarget "BobScrollGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C3132148D794200427A8C /* Debug */,
+				A12C3133148D794200427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C314B148D7A8200427A8C /* Build configuration list for PBXNativeTarget "unittests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C314C148D7A8200427A8C /* Debug */,
+				A12C314D148D7A8200427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C316B148EB3C400427A8C /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C316C148EB3C400427A8C /* Debug */,
+				A12C316D148EB3C400427A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A12C311B148D794200427A8C /* Project object */;
+}
