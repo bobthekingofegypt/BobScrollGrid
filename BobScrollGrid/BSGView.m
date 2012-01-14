@@ -143,6 +143,7 @@ selectedEntry;
 }
 
 -(void) drawEntryAtPointX:(NSInteger)x andY:(NSInteger)y {
+    //NSLog(@"(%d, %d)", x, y);
 	NSIndexPath *key = [NSIndexPath indexPathForRow:y inSection:x];
 	NSInteger index = IndexFromIndexPath(key, _numberOfEntriesPerRow);
 	if (index >= _entryCount) {
@@ -249,6 +250,9 @@ selectedEntry;
 #pragma mark Public BSGView Methods
 #pragma mark -
 
+-(NSInteger) indexForEntryAtIndexPath:(NSIndexPath*)indexPath {
+    return (indexPath.row * _numberOfEntriesPerRow) + indexPath.section;
+}
 
 -(BSGEntryView *) dequeReusableEntry:(NSString *)reuseIdentifier {
     
@@ -274,7 +278,7 @@ selectedEntry;
 	
     switch (bsgEntryViewFitMode) {
         case BSGEntryViewFitToWidth:{
-            _numberOfEntriesPerRow = [self.datasource numberOfEntriesPerRow];
+            //_numberOfEntriesPerRow = [self.datasource numberOfEntriesPerRow];
             //_numberOfRows = ceil(_entryCount / (double)_numberOfEntriesPerRow);
             
             /*

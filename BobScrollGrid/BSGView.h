@@ -121,7 +121,7 @@ typedef enum {
 //@property (nonatomic, assign) UIEdgeInsets entryPadding;
 //@property (nonatomic, assign) CGSize entrySize;
 //
-//-(NSInteger) indexForEntryAtIndexPath:(NSIndexPath*)p;
+-(NSInteger) indexForEntryAtIndexPath:(NSIndexPath*)p;
 
 @end
 
