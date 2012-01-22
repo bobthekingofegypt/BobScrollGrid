@@ -68,9 +68,6 @@ selectedEntry;
 		self.userInteractionEnabled = YES;
 		self.scrollEnabled = YES;
 		self.bsgViewDelegate = nil;
-		//self.alwaysBounceVertical = NO;
-		//self.alwaysBounceHorizontal = NO;
-		NSLog(@"TTT");
         
         preCacheColumnCount = 0;
 	}
@@ -278,9 +275,6 @@ selectedEntry;
 	
     switch (bsgEntryViewFitMode) {
         case BSGEntryViewFitToWidth:{
-            //_numberOfEntriesPerRow = [self.datasource numberOfEntriesPerRow];
-            //_numberOfRows = ceil(_entryCount / (double)_numberOfEntriesPerRow);
-            
             /*
              need to add two more paddings, one left one right to support clean fit
              */
@@ -291,17 +285,13 @@ selectedEntry;
             NSInteger contentWidth = self.bounds.size.width;
             _numberOfEntriesPerRow = floor(contentWidth / _entrySizeWithPadding.width);
             
-            //double w = contentWidth / (double) _numberOfEntriesPerRow;
-            //NSInteger padding = (w - self.entrySize.width) / 2;
-            //_entrySizeWithPadding = CGSizeMake(w, entryHeightWithPadding);
-            
-            double w = contentWidth - (_numberOfEntriesPerRow * self.entrySize.width);
-            NSInteger padding = (w / (_numberOfEntriesPerRow + 1)) / 2;
+            double spareSpace = contentWidth - (_numberOfEntriesPerRow * self.entrySize.width);
+            NSInteger padding = (spareSpace / (_numberOfEntriesPerRow + 1)) / 2;
             _entrySizeWithPadding = CGSizeMake(self.entrySize.width + (padding * 2), entryHeightWithPadding);
             
             _entryPadding = UIEdgeInsetsMake(self.entryPadding.top, padding, self.entryPadding.bottom, padding);
             
-            self.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
+            self.contentInset = UIEdgeInsetsMake(66.0f, 0.0f, 46.0f, 0.0f);
             
             _numberOfRows = ceil(_entryCount / (float)_numberOfEntriesPerRow);
             
@@ -347,11 +337,6 @@ selectedEntry;
 	self.contentSize = CGSizeMake(contentWidth, contentHeight);
 	
 	oldBounds = self.bounds;
-}
-
--(void) prepareOrientationChange {
-    [self reloadData];
-    return;
 }
 
 -(void) removeAllVisibleItems {
@@ -439,8 +424,12 @@ selectedEntry;
 	if (_entrySize.width == 0 || _entrySize.height == 0) {
 		return;
 	}
-	
-	[self redrawForLocation:self.contentOffset];
+    
+    if (!CGRectEqualToRect(oldBounds, self.bounds)) {
+        [self reloadData];
+    } else {
+        [self redrawForLocation:self.contentOffset];
+    }
 }
 
 
