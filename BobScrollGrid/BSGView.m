@@ -88,6 +88,16 @@ selectedEntry;
 	[super dealloc];
 }
 
+#pragma mark -
+#pragma mark Public API methods
+#pragma mark -
+
+-(void) deselectEntryAtIndexPath:(NSIndexPath *)indexPath {
+    BSGEntryView *entry = [visibleEntries objectForKey:indexPath];
+    [entry setHighlighted:NO animated:NO];
+    [entry setSelected:NO animated:YES];
+}
+
 #pragma mark 
 #pragma mark ScrollView delegate methods
 #pragma mark -
@@ -268,6 +278,7 @@ selectedEntry;
 }
 
 -(void) reloadData {
+    oldBounds = self.bounds;
 	self.startingIndexPath = nil;
 	self.endingIndexPath = nil;
     
@@ -291,7 +302,7 @@ selectedEntry;
             
             _entryPadding = UIEdgeInsetsMake(self.entryPadding.top, padding, self.entryPadding.bottom, padding);
             
-            self.contentInset = UIEdgeInsetsMake(66.0f, 0.0f, 46.0f, 0.0f);
+            self.contentInset = UIEdgeInsetsMake(self.contentInset.top, 0.0f, self.contentInset.bottom, 0.0f);
             
             _numberOfRows = ceil(_entryCount / (float)_numberOfEntriesPerRow);
             
@@ -371,6 +382,35 @@ selectedEntry;
 }
 
 
+
+
+-(void) layoutSubviews {
+	[super layoutSubviews];
+	if (entriesOnScreen == _entryCount) {
+		return;
+	}
+	if (_entrySize.width == 0 || _entrySize.height == 0) {
+		return;
+	}
+    
+    if (!CGSizeEqualToSize(oldBounds.size, self.bounds.size)) {
+        [self reloadData];
+    } else {
+        [self redrawForLocation:self.contentOffset];
+    }
+}
+
+
+-(NSArray *) visibleEntries {
+    return [visibleEntries allValues];
+}
+
+
+
+#pragma mark -
+#pragma mark Touch handling code
+#pragma mark -
+
 -(void) touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event {
 	CGPoint point = [[touches anyObject] locationInView:self];
 	_initialTouchPoint = point;
@@ -414,34 +454,6 @@ selectedEntry;
 		[highlightedEntry setHighlighted:NO animated:NO];
 		[highlightedEntry release], highlightedEntry = nil;
 	}
-}
-
--(void) layoutSubviews {
-	[super layoutSubviews];
-	if (entriesOnScreen == _entryCount) {
-		return;
-	}
-	if (_entrySize.width == 0 || _entrySize.height == 0) {
-		return;
-	}
-    
-    if (!CGRectEqualToRect(oldBounds, self.bounds)) {
-        [self reloadData];
-    } else {
-        [self redrawForLocation:self.contentOffset];
-    }
-}
-
-
--(NSArray *) visibleEntries {
-    return [visibleEntries allValues];
-}
-
--(void) deselectEntryAtIndexPath:(NSIndexPath *)indexPath {
-    BSGEntryView *entry = [visibleEntries objectForKey:indexPath];
-    [entry setHighlighted:NO animated:NO];
-    [entry setSelected:NO animated:YES];
-    
 }
 
 @end
