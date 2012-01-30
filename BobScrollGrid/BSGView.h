@@ -18,7 +18,7 @@ typedef enum {
 
 /** The datasource of a BSGView must adopt the BSGDatasource protocol. 
  */
-@protocol BSGDatasource
+@protocol BSGDatasource <NSObject>
 
 /** 
  Asks the datasource to return the entry for the given index path in the BSGView.
@@ -33,6 +33,11 @@ typedef enum {
  @return entryCount The number of entries in the BSGView.
  */
 -(NSInteger) entryCount;
+
+@optional
+
+-(NSInteger) numberOfEntriesPerRow;
+
 
 @end
 
@@ -65,63 +70,100 @@ typedef enum {
  */
 
 @interface BSGView : UIScrollView<UIScrollViewDelegate> {
-    id<BSGDatasource> _datasource;
-	id<BSGViewDelegate> _bsgViewDelegate;
+    id<BSGDatasource> datasource;
+	id<BSGViewDelegate> bsgViewDelegate;
 	
-	UIEdgeInsets _entryPadding;
-	CGSize _entrySize;
+	UIEdgeInsets entryPadding;
+	CGSize entrySize;
+    
+	NSInteger numberOfEntriesPerRow;
+	NSInteger numberOfRows;
+    NSInteger entryCount;
+    
+	CGSize entrySizeWithPadding;
+    
+    CGPoint initialTouchPoint;
+	BOOL touchingAnEntry;
 	
-@private
-	CGSize _entrySizeWithPadding;
-	NSInteger _numberOfRows;
-	NSInteger _entryCount;
-	NSInteger _numberOfEntriesPerRow;
 	NSMutableDictionary *visibleEntries;
 	NSMutableDictionary *reusableEntries;
 	NSIndexPath *startingIndexPath;
 	NSIndexPath *endingIndexPath;
 	BSGEntryView *highlightedEntry;
 	NSIndexPath *selectedEntry;
-	CGPoint _initialTouchPoint;
-	BOOL _touchingAnEntry;
 	
 	NSInteger entriesOnScreen;
 	
 	CGRect oldBounds;
-	NSMutableDictionary *oldVisibleEntries;
     
     NSInteger preCacheColumnCount;
     
     BSGEntryViewFit bsgEntryViewFitMode;
 }
 
+/**---------------------------------------------------------------------------------------
+ * @name Managing the delegate and the datasource
+ *  ---------------------------------------------------------------------------------------
+ */
+
+/** The datasource for this scroll grid */
 @property (nonatomic, assign) id<BSGDatasource> datasource;
+
+/** The delegate for this scroll grid */
 @property (nonatomic, assign) id<BSGViewDelegate> bsgViewDelegate;
+
+/**---------------------------------------------------------------------------------------
+ * @name Configuring the scroll grid
+ *  ---------------------------------------------------------------------------------------
+ */
+
+/** The minimum padding around each entry */
 @property (nonatomic, assign) UIEdgeInsets entryPadding;
+
+/** Size to be allocated for each entry */
 @property (nonatomic, assign) CGSize entrySize;
+
+/** read only property for access to the number of entries per row */
 @property (nonatomic, readonly) NSInteger numberOfEntriesPerRow;
+
+/** number of extra columns to be precached without having to scroll, extends both ways */
 @property (nonatomic, assign) NSInteger preCacheColumnCount;
+
+/** returns the currently selected entry */
 @property (nonatomic, assign) NSIndexPath *selectedEntry;
 
--(id) initWithFrame:(CGRect)frame;
--(void) reloadData;
+/** Returns a reusable entry view object with the given identifier 
+ @param identifier The reuse identifier used to identify the entry type 
+ @return entry a reusable entry view object 
+ */
 -(BSGEntryView *) dequeReusableEntry:(NSString *)reuseIdentifier;
--(NSArray *) visibleEntries;
--(void) prepareOrientationChange;
--(void) deselectEntryAtIndexPath:(NSIndexPath *)indexPath;
+
+/** Triggers a re-calculation of the scroll grids bounds */
 -(void) resetBounds;
 
+/**---------------------------------------------------------------------------------------
+ * @name Reload the scroll gird data
+ *  ---------------------------------------------------------------------------------------
+ */
 
-///** The object that acts as the data source of the receiving bob scroll grid view. */
-//@property (nonatomic, assign) id<BSGDatasource> datasource;
-//
-///** The object that acts as the view delegate of the receiving bob scroll grid view. */
-//@property (nonatomic, assign) id<BSGViewDelegate> bsgViewDelegate;
-//
-//@property (nonatomic, assign) UIEdgeInsets entryPadding;
-//@property (nonatomic, assign) CGSize entrySize;
-//
--(NSInteger) indexForEntryAtIndexPath:(NSIndexPath*)p;
+/** Reloads the scroll grid data from the datasource */
+-(void) reloadData;
+
+/**---------------------------------------------------------------------------------------
+ * @name Accessing the scroll grid entries
+ *  ---------------------------------------------------------------------------------------
+ */
+
+/** Returns an array of the entries visible on screen */
+-(NSArray *) visibleEntries;
+
+/** deselects the entry at the given index path 
+ @param indexPath the index path
+ */
+-(void) deselectEntryAtIndexPath:(NSIndexPath *)indexPath;
+
+/** returns the sequential index for a given index path */
+-(NSInteger) indexForEntryAtIndexPath:(NSIndexPath*)indexPath;
 
 @end
 

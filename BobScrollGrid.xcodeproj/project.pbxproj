@@ -34,7 +34,6 @@
 		A12C3144148D7A8200427A8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12C3142148D7A8200427A8C /* InfoPlist.strings */; };
 		A12C3146148D7A8200427A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C3145148D7A8200427A8C /* main.m */; };
 		A12C3150148D7B3E00427A8C /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C314E148D7B3300427A8C /* GHUnitIOS.framework */; };
-		A12C3155148D7D1E00427A8C /* BSGViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C3152148D7CE900427A8C /* BSGViewTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +53,6 @@
 		A12C3145148D7A8200427A8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A12C3147148D7A8200427A8C /* unittests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unittests-Prefix.pch"; sourceTree = "<group>"; };
 		A12C314E148D7B3300427A8C /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ExternalFrameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
-		A12C3152148D7CE900427A8C /* BSGViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGViewTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				A12C3140148D7A8200427A8C /* Supporting Files */,
-				A12C3152148D7CE900427A8C /* BSGViewTest.m */,
 				A12A997B14900F7700B412A7 /* BSGEntryViewTest.m */,
 			);
 			path = unittests;
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12C3146148D7A8200427A8C /* main.m in Sources */,
-				A12C3155148D7D1E00427A8C /* BSGViewTest.m in Sources */,
 				A12A997E1490136300B412A7 /* BSGEntryView.m in Sources */,
 				A12A997F1490137500B412A7 /* BSGEntryViewTest.m in Sources */,
 			);
